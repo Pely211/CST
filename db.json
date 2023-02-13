@@ -1,0 +1,22 @@
+{
+  "itemList": [
+    {
+      "name": "Vorpal Sword",
+      "category": "Weapon",
+      "price": 1000,
+      "quantity": 1,
+      "rarity": "Legendary",
+      "id": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,31 @@
+@import '~@angular/material/prebuilt-themes/purple-green.css'; /* Importeaza material */
+.contentBackground{
+    background: rgb(119,230,115);
+    position: absolute;
+    background: radial-gradient(circle, rgba(119,230,115,1) 10%, rgb(172, 249, 90) 50%, rgba(119,230,115,1) 90%);
+}   
+
+  .card-container
+{
+    --card-color: black;
+    background-color: white;
+    width: min-content;
+    height: min-content;
+    margin: auto;
+    top:100px;
+    box-shadow: 10px 10px black;
+    
+}
+.mat-form-field {
+    margin: 0;
+    padding: 0;
+  }
+.logoPely{
+    margin-top: -5px;
+    margin-left: 7px;
+}
+.mat-toolbar
+{
+  height: 100px;
+  min-height:100px;
+}

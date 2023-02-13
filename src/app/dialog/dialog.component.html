@@ -1,0 +1,35 @@
+<h1 mat-dialog-title>Add Item</h1>
+<div mat-dialog-content>
+    <form [formGroup]="itemForm" *ngIf="itemForm">
+        <mat-form-field appearance="fill">
+            <mat-label>Item Name</mat-label>
+            <input formControlName="name" matInput placeholder="Name">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Item Category</mat-label>
+            <mat-select formControlName="category" placeholder="Category">
+                <mat-option value="Weapon">Weapon</mat-option>
+                <mat-option value="Armor">Armor</mat-option>
+                <mat-option value="Consumable">Consumable</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Item Price</mat-label>
+            <input formControlName="price" matInput type="number" placeholder="Price">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Item Quantity</mat-label>
+            <input formControlName="quantity" matInput type="number"  placeholder="Quantity">
+          </mat-form-field>
+          <label for=""><h1>Item Rarity</h1></label>
+          <mat-radio-group formControlName="rarity">
+            <mat-radio-button *ngFor="let Rarity of rarityList " [value]="Rarity">
+                {{Rarity}}
+            </mat-radio-button>
+          </mat-radio-group>   
+    </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+    <button mat-raised-button color="accent" mat-dialog-close (click)="addItem()">Save</button>
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+</div>
